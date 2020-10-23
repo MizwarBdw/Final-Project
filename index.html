@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Final Project P0 Hacktiv8</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Rajdhani&family=Turret+Road:wght@800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <video autoplay="autoplay" loop poster="img/LWbgPic.png" id="bgvid">
+            <source src="img/LWbg.mp4" type="video/mp4">
+        </video>
+        <audio controls autoplay loop id="myAudio">
+            <source src="audio/bgm_1162.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+
+            
+        <div class="myButton"></div>
+
+        <div>
+            <h1>New Album Coming Soon</h1>
+            <p class="p1">Available ON</p1>
+            <p class='p2'>20.10.20</p1>
+        </div>
+        <!-- <button id="vidpause">Pause</button> -->
+
+        <script>
+            var vid = document.getElementById("bgvid");
+            var pauseButton = document.getElementsByClassName("myButton");
+           console.log(pauseButton)  
+
+            function vidFade() {
+            vid.classList.add("stopfade");
+            }
+                vid.addEventListener('ended', function() {
+                // only functional if "loop" is removed 
+                vid.pause();
+	            // to capture IE10
+	            vidFade();
+                });
+
+
+            pauseButton[0].addEventListener("click", function() {
+            vid.classList.toggle("stopfade");
+	            if (vid.paused) {
+                vid.play();
+		        pauseButton.innerHTML = "Pause";
+	            } else {
+                vid.pause();
+                pauseButton.innerHTML = "Paused";
+	            }
+            })
+        </script>
+    </div>
+</body>
+</html>

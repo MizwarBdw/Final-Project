@@ -1,0 +1,44 @@
+video#bgvid {
+    position: fixed; right: 0; bottom: 0;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; 
+    z-index: -100;
+    background: url(img/LWbgPic.png) no-repeat;
+    background-size: cover;
+    }
+    video { display: block; }
+    
+.myButton{
+    background: url(img/button.png) no-repeat;
+    margin:0 auto;
+    width:352px;
+    height:352px;
+}
+
+h1{
+    margin-left: 2rem;
+    font-family: 'Turret Road', cursive;
+    font-size: 50px;
+    text-align:left;
+    color: rgb(116, 181, 238);
+        
+}
+    
+.p1{
+    margin-left: 2rem;
+    font-family: 'Turret Road', cursive;
+    font-size: 70px;
+    text-align:left;
+    color: rgb(245, 245, 245);  
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+}
+
+.p2{
+    margin-left: 2rem;
+    margin-top: 0 !important;
+    font-family: 'Turret Road', cursive;
+    font-size: 108px;
+    text-align:left;
+    color: rgb(208, 216, 223);  	
+}
